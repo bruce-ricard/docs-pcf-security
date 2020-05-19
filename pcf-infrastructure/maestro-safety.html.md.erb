@@ -2,6 +2,18 @@
 title: CredHub Maestro Safety
 owner: CredHub Maestro
 ---
+<%
+  command_regenerate_ca = "maestro regenerate ca --all"
+  command_update_latest = "maestro update-transitional latest --all"
+  command_update_signing = "maestro update-transitional signing --all"
+  command_regenerate_leaf = "maestro regenerate leaf --all"
+  command_update_remove = "maestro update-transitional remove --all"
+
+
+
+%>
+
+
 Each section is a command that has a table of the possible errors and common mitigations.
 
 <p class="note"><strong>Note:</strong> The mitigations listed here are common solutions and may not catch every error case. If these solutions did not solve your issue, please reach out to the CredHub team directly.</p>
